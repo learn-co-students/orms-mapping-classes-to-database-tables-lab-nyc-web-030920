@@ -1,5 +1,5 @@
 require "spec_helper"
-
+require_relative "../config/environment.rb"
 describe "Student" do
   let(:josh) {Student.new("Josh", "9th")}
 
