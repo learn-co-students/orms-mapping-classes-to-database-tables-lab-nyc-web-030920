@@ -34,8 +34,8 @@ class Student
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql)
   end
-  def self.create(attributes)
-    s = self.new(attributes[:name], attributes[:grade])
+  def self.create(name:, grade:)
+    s = self.new(name, grade)
     s.save 
     return s
   end
